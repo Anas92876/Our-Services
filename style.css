@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background: linear-gradient(to right, rgb(202, 31, 202), rgb(33, 213, 150));
+}
+html{
+   font-size: 10px;
+}
+.container{
+    display: grid;
+    place-content: center center;
+    row-gap: 5rem;
+}
+.Blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.3rem;
+}
+h1{
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    margin-top: 1rem;
+}
+.Blog{
+    display: grid;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    gap: 1.5rem;
+    text-align: center;
+    grid-template-columns: repeat(1,auto);
+    width: 40rem;
+   
+    
+}
+i{
+    font-size: 9rem;
+}
+.Blog h2{
+    font-size: 2.5rem;
+    font-weight: 750;
+}
+.Blog p{
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.552);
+}
+.Blog a{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(55, 0, 255);
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    justify-self: center;
+}
+@media screen and (max-width:1400px) {
+    .Blogs{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+@media screen and (max-width:600px) {
+    html{
+        font-size: 7px;
+    }
+}
